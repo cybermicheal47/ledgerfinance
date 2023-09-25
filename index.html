@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/lightbox.min.css"/>
   <title>LEDGER FINANCE</title>
 </head>
 <body id="home">
@@ -122,33 +124,79 @@
          </header>
          <div class="row">
           <div class="column">
-            <img src="images/cases/cases1.jpg">
-              <img src="images/cases/cases2.jpg">
-
-          </div>
- 
-            <div class="column">
-            <img src="images/cases/cases3.jpg">
-              <img src="images/cases/cases4.jpg">
-
-          </div>
+            <a
+            href="images/cases/cases1.jpg"
+            data-lightbox="cases"
+            data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+            dolore!"
+          >
+            <img src="images/cases/cases1.jpg" alt="" />
+          </a>
 
 
-            <div class="column">
-            <img src="images/cases/cases5.jpg">
-              <img src="images/cases/cases6.jpg">
-
-          </div>
-
-            <div class="column">
-            <img src="images/cases/cases7.jpg">
-              <img src="images/cases/cases8.jpg">
-
-          </div>
-
-
-
-
+          
+          <a
+          href="images/cases/cases2.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+          dolore!"
+        >
+          <img src="images/cases/cases2.jpg" alt="" />
+        </a>
+      </div>
+      <div class="column">
+        <a
+          href="images/cases/cases3.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+        dolore!"
+        >
+          <img src="images/cases/cases3.jpg" alt="" />
+        </a>
+        <a
+          href="images/cases/cases4.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+          dolore!"
+        >
+          <img src="images/cases/cases4.jpg" alt="" />
+        </a>
+      </div>
+      <div class="column">
+        <a
+          href="images/cases/cases5.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+        dolore!"
+        >
+          <img src="images/cases/cases5.jpg" alt="" />
+        </a>
+        <a
+          href="images/cases/cases6.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+          dolore!"
+        >
+          <img src="images/cases/cases6.jpg" alt="" />
+        </a>
+      </div>
+      <div class="column">
+        <a
+          href="images/cases/cases7.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+        dolore!"
+        >
+          <img src="images/cases/cases7.jpg" alt="" />
+        </a>
+        <a
+          href="images/cases/cases8.jpg"
+          data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+          dolore!"
+        >
+          <img src="images/cases/cases8.jpg" alt="" />
+        </a>
 
 
          </div>
@@ -295,9 +343,16 @@
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+  crossorigin="anonymous"></script> <!--  jquery for the smooth scrolling -->
+
+  <script src="js/lightbox.min.js"></script> <!--  lightbox  -->
 
 <script>
+
+
+
 const navbar =document.getElementById('navbar')
 window.onscroll = function () {
   if(window.pageYOffset > 100){
